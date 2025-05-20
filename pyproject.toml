@@ -1,0 +1,24 @@
+[project]
+name = "qa_guru_python_19_hw16"
+version = "0.1.0"
+description = "poetry project"
+authors = [
+    {name = "Marina Filippova",email = "alira.noki@gmail.com"}
+]
+readme = "README.md"
+packages = [{include = 'qa_guru_python_19_hw16'}]
+
+requires-python = ">=3.12"
+dependencies = [
+    "selene (>=1.0.2,<2.0.0)",
+    "pytest (>=8.3.5,<9.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^3.3.7"
+
